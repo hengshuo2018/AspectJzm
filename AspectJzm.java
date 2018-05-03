@@ -27,13 +27,6 @@ public class AspectJzm {
                 MethodProxy proxy = () -> exists.execute(core);
                 return apoMethod.execute(proxy);
             };
-
-            chain = new Delegate() {
-                @Override
-                public Object execute(MethodProxy core) {
-                    return null;
-                }
-            }
         }
         return this;
     }
